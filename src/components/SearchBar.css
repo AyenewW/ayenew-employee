@@ -1,0 +1,24 @@
+.SearcInputs{
+    margin-top: 105px;
+    display: flex;
+
+}
+.Search input{
+    background-color: antiquewhite;
+    border: 0px;
+    border-radius: 2px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-size: 18px;
+    padding: 15px;
+    height: 30px;
+    width: 300px;
+
+}
+.SearchIcon{
+    height: 60px;
+    width: 50px;
+    background-color: white;
+    display: grid;
+    place-items: center;
+}
