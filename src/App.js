@@ -1,130 +1,110 @@
 
-                            import './App.css';
-                        
-                            import EmployeeList from "./components/EmployeeList";
-                            //     import imageOne from "./image/image_one.jpg"
-                            //     import imageTwo from "./image/image_two.jpg"
-                            //     import imageThree from "./image/image_three.jpg"
-                            //     import imageFour from "./image/image_four.jpg"
-                            //     import imagefive from "./image/image_five.jpg"
-                            //     import imagesix from "./image/image_six.jpg"
+          import './App.css';
+          import React from 'react';
+          import EmployeePage from './components/EmployeePage';
+          import HomePage from './components/HomePage';
+          import Wrapper from './components/Wrapper';
+
+          function App() {
+          const Employee =[
 
 
-                            const Employee=[
-                            {
-                            id:"1",
-                            name: "Ayenew",
-                            image :"https://images.pexels.com/photos/5198239/pexels-photo-5198239.jpeg?auto=compress&cs=tinysrgb&w=600" , //imageOne,
+          {
+          id:1,
+          image:"https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&w=600",
+          name:"Liam Noah ",
+          title:"Software Developer",
+          calloffice: "202-555-0185",
+          callmobile:"202-555-0108",
+          sms:"202-555-0196",
+          email:"liamnoah@gmail.com",
+          facebook:"#liamnoah",
+          ig:"@liamnoah.IG",
+          city:"Chicago",
+          },
 
-                            title: "Front-End ",
-                            descrption:"trying hard",
-                            calloffice:"202-668-0900",
-                            callmobile:"209-098-9878",
-                            sms:"456-098-0987",
-                            email:"ayregff@gmail.com",
+          {
+          id:2,
+          image:"https://images.pexels.com/photos/3400574/pexels-photo-3400574.jpeg?auto=compress&cs=tinysrgb&w=600",
+          name:"Oliver Elijah ",
+          title:"Data Scientist",
+          calloffice: "202-555-0182",
+          callmobile:"202-555-0114",
+          sms:"202-555-0100",
+          email:"oliverelijah@gmail.com",
+          facebook:"#oliverelijah",
+          ig:"@oliverelijah.IG",
+          city:"Seattle",
+          },
 
-                            },
+          {
+          id:3,
+          image:"https://images.pexels.com/photos/12236150/pexels-photo-12236150.jpeg?auto=compress&cs=tinysrgb&w=600",
+          name:"Isabella Benjamin ",
+          title:"Financial Manager",
+          calloffice: "613-555-0186",
+          callmobile:"613-555-0186",
+          sms:"613-555-0196",
+          email:"Isabellabenjamin@gmail.com",
+          facebook:"#Isabellabenjamin",
+          ig:"@Isabellabenjamin.IG",
+          city:"Washington",
+          },
 
-                            {
-                            id: "2",
-                            name: "Zelalem",
-                            image: "https://images.pexels.com/photos/2696299/pexels-photo-2696299.jpeg?auto=compress&cs=tinysrgb&w=600",//imageTwo,
-                            title: "Front-End",
-                            descrption:"Hard working",
-                            calloffice:"202-668-0900",
-                            callmobile:"209-098-9878",
-                            sms:"456-098-0987",
-                            email:"ayregff@gmail.com",
-                            },
+          {
+          id:4,
+          image:" https://images.pexels.com/photos/5917850/pexels-photo-5917850.jpeg?auto=compress&cs=tinysrgb&w=600",
+          name:"Henry William",
+          title:"Information Security Analyst",
+          calloffice: "613-555-0107",
+          callmobile:"613-555-0103",
+          sms:"613-555-0100",
+          email:"henrywilliam@gmail.com",
+          facebook:"#henrywilliam",
+          ig:"@henrywilliam.IG",
+          city:"Hawaii",
+          },
 
-                            {
-                            id:"3",
-                            name: "Lilise",
-                            image:"https://images.pexels.com/photos/7606074/pexels-photo-7606074.jpeg?auto=compress&cs=tinysrgb&w=600",//imageThree,
-                            title: "Both-End",
-                            descrption:"Perfict",
-                            calloffice:"202-668-0900",
-                            callmobile:"209-098-9878",
-                            sms:"456-098-0987",
-                            email:"ayregff@gmail.com",
-                            },
+          {
+          id:5,
+          image:"https://images.pexels.com/photos/7793186/pexels-photo-7793186.jpeg?auto=compress&cs=tinysrgb&w=600",
+          name:"Elijah James ",
+          title:"Nurse Practitioner",
+          calloffice: "655-574-8492",
+          callmobile:"655-654-0793",
+          sms:"746-764-0877",
+          email:"elijahjames@gmail.com",
+          facebook:"#elijahjames",
+          ig:"@elijahjames.IG",
+          city:"Salt Lake City",
+          },
 
-                            {
-                            id:"4",
-                            name: "Kebede",
-                            image:"https://images.pexels.com/photos/7567434/pexels-photo-7567434.jpeg?auto=compress&cs=tinysrgb&w=600",//imageFour,
-                            title: "computer",
-                            descrption:"Nice",
-                            calloffice:"202-668-0900",
-                            callmobile:"209-098-9878",
-                            sms:"456-098-0987",
-                            email:"ayregff@gmail.com",
-                            },
+          {
+          id:6,
+          image:"https://images.pexels.com/photos/5648108/pexels-photo-5648108.jpeg?auto=compress&cs=tinysrgb&w=600",
+          name:"Lucas Theodore",
+          title:"Firefighters",
+          calloffice: "287-387-9087",
+          callmobile:"786-757-5642",
+          sms:"746-764-4527",
+          email:"lucastheodore@gmail.com",
+          facebook:"#lucastheodore",
+          ig:"@lucastheodore.IG",
+          city:"San Antonio",
+          },
+          ]
 
-                            {
-                            id:"5",
-                            name: "Belay",
-                            image: "https://images.pexels.com/photos/3760514/pexels-photo-3760514.jpeg?auto=compress&cs=tinysrgb&w=600",//imagefive,
-                            title: "Back-End",
-                            descrption:"Nice working",
-                            calloffice:"202-668-0900",
-                            callmobile:"209-098-9878",
-                            sms:"456-098-0987",
-                            email:"ayregff@gmail.com",
-                            },
+          const[EmployeeDetail,setEmployeeDetail] =React.useState(Employee[0])
+          return (
+          <div className='container'>
+          <Wrapper>
+          <HomePage Employee={Employee} setEmployeeDetail={setEmployeeDetail}/>
+          <EmployeePage Employee={Employee} EmployeeDetail={EmployeeDetail}/>
+          </Wrapper>
+          </div>
+          )
+          }
 
-                            {
-                                id:"6",
-                                name: "Mulu",
-                                image: "https://images.pexels.com/photos/3799115/pexels-photo-3799115.jpeg?auto=compress&cs=tinysrgb&w=600",// imagesix,
-                                title: "computer Eng",
-                                descrption:"Hard working Perfect",
-                                calloffice:"202-668-0900",
-                                callmobile:"209-098-9878",
-                                sms:"456-098-0987",
-                                email:"ayregff@gmail.com",
-                                },
-                            ];
-
-                            function App(){
-                            return (
-                            <div className='App'>
-                            <div className='Home_Page'>
-                            <div className='Employee_Directory'>
-                            <h3>Employee Directory</h3> 
-                            </div> 
-                            <div className='search_bar'>
-                            <input type="text" placeholder='search'></input>
-                            </div>
-                            <div className='Employee_List'>
-                            {Employee.map(({name,image,title,descrption,calloffice,callmobile,sms,email},index) => {
-                            return (
-
-                            <div className='Employee_ListItems'>
-                            <EmployeeList 
-                            name ={name}
-                            image={image}
-                            title={title}
-                            descrption={descrption}
-                            calloffice={calloffice}
-                            callmobile={callmobile}
-                            sms={sms}
-                            email={email}
-
-                            />
-
-                            </div>
+          export default App;
 
 
-                            );
-                            })}
-                            </div>
-                             </div>
-                             </div>
-                             
-                             
-
-                             );
-                            
-                            }
-                            export default App

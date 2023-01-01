@@ -1,24 +1,23 @@
- import React from 'react';
- import "./SearchBar.css";
- import App from '../App';
- import './App.css'
- import SearchIcon from '@mui/icons-material/Search';
- function SearchBar({placeholder,data}) {
-   return (
-     <div className='search'>
-      <div className='searchInputs'>
-        <input type='text' placeholder={placeholder}/>
-        <div className='searchIcon'><searchIcon /></div>
-        </div>
-        <div className='dataResult'></div>
-        {data.map((value,key)=>{
-          return(
-            <p>{value.title}</p>
-          )
-        }
-        )}
-       
-     </div>
+const SearchBar = () => {
+  return ( 
+    <div>
+    <input style={styledSearchBar} type="text" placeholder="Search" />
+  </div>
+   
    );
- }
- export default SearchBar;
+  
+  };
+    
+  const styledSearchBar ={
+    //border: "5px solid #8BC34A",
+      width:"95%",
+     border:" 1px solid #FAFAFA ",
+      borderRadius:"5px",
+      padding: "7px 0px",
+      margin: "2px 2.5px",
+      
+      
+  }
+  export default SearchBar;
+    
+
